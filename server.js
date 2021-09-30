@@ -17,6 +17,7 @@ app.get('/', (req, res) => {
 
 app.get('/', (req, res) => {
         fs.readFile('stylesheets.css', (err, data) => {
+            res.setHeader('Content-Type', 'text/css');
             res.send(data);
         })
 })
