@@ -15,8 +15,8 @@ app.get('/', (req, res) => {
 
 });
 
-app.get('css/stylesheets.css', (req, res) => {
-        fs.readFile('css/stylesheets.css', (err, data) => {
+app.get('stylesheets.css', (req, res) => {
+        fs.readFile('stylesheets.css', (err, data) => {
             res.send(data);
         })
 })
