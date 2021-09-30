@@ -18,8 +18,8 @@ app.get('/', (req, res) => {
 app.get('/stylesheets.css', (req, res) => {
         fs.readFile('stylesheets.css', (err, data) => {
             res.send(data);
-        })
-})
+        });
+});
 
 
 app.listen(PORT, () => {
